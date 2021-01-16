@@ -32,6 +32,7 @@ Partial Class Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Btn_Minimize = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -46,7 +47,6 @@ Partial Class Login
         Me.Txt_Username = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Btn_close = New System.Windows.Forms.Button()
-        Me.Btn_Minimize = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -172,6 +172,19 @@ Partial Class Login
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(474, 529)
         Me.Panel2.TabIndex = 1
+        '
+        'Btn_Minimize
+        '
+        Me.Btn_Minimize.FlatAppearance.BorderSize = 0
+        Me.Btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Minimize.Font = New System.Drawing.Font("Verdana", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Minimize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Btn_Minimize.Location = New System.Drawing.Point(397, 0)
+        Me.Btn_Minimize.Name = "Btn_Minimize"
+        Me.Btn_Minimize.Size = New System.Drawing.Size(40, 40)
+        Me.Btn_Minimize.TabIndex = 14
+        Me.Btn_Minimize.Text = "-"
+        Me.Btn_Minimize.UseVisualStyleBackColor = True
         '
         'LinkLabel1
         '
@@ -325,19 +338,6 @@ Partial Class Login
         Me.Btn_close.TabIndex = 0
         Me.Btn_close.Text = "X"
         Me.Btn_close.UseVisualStyleBackColor = True
-        '
-        'Btn_Minimize
-        '
-        Me.Btn_Minimize.FlatAppearance.BorderSize = 0
-        Me.Btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Minimize.Font = New System.Drawing.Font("Verdana", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Minimize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Btn_Minimize.Location = New System.Drawing.Point(397, 0)
-        Me.Btn_Minimize.Name = "Btn_Minimize"
-        Me.Btn_Minimize.Size = New System.Drawing.Size(40, 40)
-        Me.Btn_Minimize.TabIndex = 14
-        Me.Btn_Minimize.Text = "-"
-        Me.Btn_Minimize.UseVisualStyleBackColor = True
         '
         'Login
         '

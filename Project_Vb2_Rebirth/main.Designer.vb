@@ -22,25 +22,29 @@ Partial Class main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PanelSidemenu = New System.Windows.Forms.Panel()
         Me.Btn_report = New System.Windows.Forms.Button()
         Me.Panel_Detail = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Btn_Representative = New System.Windows.Forms.Button()
+        Me.Btn_typeproduct = New System.Windows.Forms.Button()
+        Me.Btn_Product = New System.Windows.Forms.Button()
+        Me.Btn_detail = New System.Windows.Forms.Button()
+        Me.Btn_import = New System.Windows.Forms.Button()
         Me.Panel_Sale = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Btn_sale = New System.Windows.Forms.Button()
         Me.Panellogo = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel_ChidForm = New System.Windows.Forms.Panel()
+        Me.Panel_ChidForm = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.PanelSidemenu.SuspendLayout()
         Me.Panel_Detail.SuspendLayout()
         Me.Panel_Sale.SuspendLayout()
         Me.Panellogo.SuspendLayout()
+        Me.Panel_ChidForm.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelSidemenu
@@ -49,8 +53,8 @@ Partial Class main
         Me.PanelSidemenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.PanelSidemenu.Controls.Add(Me.Btn_report)
         Me.PanelSidemenu.Controls.Add(Me.Panel_Detail)
-        Me.PanelSidemenu.Controls.Add(Me.Button5)
-        Me.PanelSidemenu.Controls.Add(Me.Button4)
+        Me.PanelSidemenu.Controls.Add(Me.Btn_detail)
+        Me.PanelSidemenu.Controls.Add(Me.Btn_import)
         Me.PanelSidemenu.Controls.Add(Me.Panel_Sale)
         Me.PanelSidemenu.Controls.Add(Me.Btn_sale)
         Me.PanelSidemenu.Controls.Add(Me.Panellogo)
@@ -58,7 +62,7 @@ Partial Class main
         Me.PanelSidemenu.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PanelSidemenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelSidemenu.Name = "PanelSidemenu"
-        Me.PanelSidemenu.Size = New System.Drawing.Size(250, 553)
+        Me.PanelSidemenu.Size = New System.Drawing.Size(250, 643)
         Me.PanelSidemenu.TabIndex = 0
         '
         'Btn_report
@@ -79,97 +83,97 @@ Partial Class main
         '
         'Panel_Detail
         '
-        Me.Panel_Detail.Controls.Add(Me.Button8)
-        Me.Panel_Detail.Controls.Add(Me.Button6)
-        Me.Panel_Detail.Controls.Add(Me.Button7)
+        Me.Panel_Detail.Controls.Add(Me.Btn_Representative)
+        Me.Panel_Detail.Controls.Add(Me.Btn_typeproduct)
+        Me.Panel_Detail.Controls.Add(Me.Btn_Product)
         Me.Panel_Detail.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel_Detail.Location = New System.Drawing.Point(0, 313)
         Me.Panel_Detail.Name = "Panel_Detail"
         Me.Panel_Detail.Size = New System.Drawing.Size(250, 120)
         Me.Panel_Detail.TabIndex = 5
         '
-        'Button8
+        'Btn_Representative
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.LightGray
-        Me.Button8.Location = New System.Drawing.Point(0, 80)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button8.Size = New System.Drawing.Size(250, 40)
-        Me.Button8.TabIndex = 2
-        Me.Button8.Text = "ຂໍ້ມູນຕົວແທນ"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Btn_Representative.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Btn_Representative.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Btn_Representative.FlatAppearance.BorderSize = 0
+        Me.Btn_Representative.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Representative.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Representative.ForeColor = System.Drawing.Color.LightGray
+        Me.Btn_Representative.Location = New System.Drawing.Point(0, 80)
+        Me.Btn_Representative.Name = "Btn_Representative"
+        Me.Btn_Representative.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.Btn_Representative.Size = New System.Drawing.Size(250, 40)
+        Me.Btn_Representative.TabIndex = 2
+        Me.Btn_Representative.Text = "ຂໍ້ມູນຕົວແທນ"
+        Me.Btn_Representative.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Representative.UseVisualStyleBackColor = False
         '
-        'Button6
+        'Btn_typeproduct
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.LightGray
-        Me.Button6.Location = New System.Drawing.Point(0, 40)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(250, 40)
-        Me.Button6.TabIndex = 1
-        Me.Button6.Text = "ປະເພດສິນຄ້າ"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.Btn_typeproduct.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Btn_typeproduct.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Btn_typeproduct.FlatAppearance.BorderSize = 0
+        Me.Btn_typeproduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_typeproduct.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_typeproduct.ForeColor = System.Drawing.Color.LightGray
+        Me.Btn_typeproduct.Location = New System.Drawing.Point(0, 40)
+        Me.Btn_typeproduct.Name = "Btn_typeproduct"
+        Me.Btn_typeproduct.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.Btn_typeproduct.Size = New System.Drawing.Size(250, 40)
+        Me.Btn_typeproduct.TabIndex = 1
+        Me.Btn_typeproduct.Text = "ປະເພດສິນຄ້າ"
+        Me.Btn_typeproduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_typeproduct.UseVisualStyleBackColor = False
         '
-        'Button7
+        'Btn_Product
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.LightGray
-        Me.Button7.Location = New System.Drawing.Point(0, 0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(250, 40)
-        Me.Button7.TabIndex = 0
-        Me.Button7.Text = "ຂໍ້ມູນສິນຄ້າ"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Btn_Product.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Btn_Product.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Btn_Product.FlatAppearance.BorderSize = 0
+        Me.Btn_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Product.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Product.ForeColor = System.Drawing.Color.LightGray
+        Me.Btn_Product.Location = New System.Drawing.Point(0, 0)
+        Me.Btn_Product.Name = "Btn_Product"
+        Me.Btn_Product.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.Btn_Product.Size = New System.Drawing.Size(250, 40)
+        Me.Btn_Product.TabIndex = 0
+        Me.Btn_Product.Text = "ຂໍ້ມູນສິນຄ້າ"
+        Me.Btn_Product.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Product.UseVisualStyleBackColor = False
         '
-        'Button5
+        'Btn_detail
         '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button5.Location = New System.Drawing.Point(0, 268)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button5.Size = New System.Drawing.Size(250, 45)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "ລາຍລະອຽດ"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Btn_detail.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Btn_detail.FlatAppearance.BorderSize = 0
+        Me.Btn_detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_detail.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_detail.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Btn_detail.Location = New System.Drawing.Point(0, 268)
+        Me.Btn_detail.Name = "Btn_detail"
+        Me.Btn_detail.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Btn_detail.Size = New System.Drawing.Size(250, 45)
+        Me.Btn_detail.TabIndex = 4
+        Me.Btn_detail.Text = "ລາຍລະອຽດ"
+        Me.Btn_detail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_detail.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Btn_import
         '
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button4.Location = New System.Drawing.Point(0, 223)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(250, 45)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "ການນຳເຂົ້າ"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Btn_import.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Btn_import.FlatAppearance.BorderSize = 0
+        Me.Btn_import.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_import.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_import.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Btn_import.Location = New System.Drawing.Point(0, 223)
+        Me.Btn_import.Name = "Btn_import"
+        Me.Btn_import.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.Btn_import.Size = New System.Drawing.Size(250, 45)
+        Me.Btn_import.TabIndex = 3
+        Me.Btn_import.Text = "ການນຳເຂົ້າ"
+        Me.Btn_import.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_import.UseVisualStyleBackColor = True
         '
         'Panel_Sale
         '
@@ -247,29 +251,44 @@ Partial Class main
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(59, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 40)
+        Me.Label1.Size = New System.Drawing.Size(128, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Rebirth"
         '
         'Panel_ChidForm
         '
-        Me.Panel_ChidForm.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel_ChidForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.Panel_ChidForm.BackColor = System.Drawing.Color.White
+        Me.Panel_ChidForm.Controls.Add(Me.Guna2Panel1)
+        Me.Panel_ChidForm.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_ChidForm.Location = New System.Drawing.Point(250, 0)
+        Me.Panel_ChidForm.MaximumSize = New System.Drawing.Size(910, 643)
         Me.Panel_ChidForm.Name = "Panel_ChidForm"
-        Me.Panel_ChidForm.Size = New System.Drawing.Size(682, 553)
+        Me.Panel_ChidForm.ShadowDecoration.Parent = Me.Panel_ChidForm
+        Me.Panel_ChidForm.Size = New System.Drawing.Size(910, 643)
         Me.Panel_ChidForm.TabIndex = 1
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Guna2Panel1.Location = New System.Drawing.Point(727, 0)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(200, 60)
+        Me.Guna2Panel1.TabIndex = 8
+        '
+        'Guna2Elipse1
+        '
+        Me.Guna2Elipse1.BorderRadius = 17
+        Me.Guna2Elipse1.TargetControl = Me.Guna2Panel1
         '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(932, 553)
+        Me.ClientSize = New System.Drawing.Size(1160, 643)
         Me.Controls.Add(Me.Panel_ChidForm)
         Me.Controls.Add(Me.PanelSidemenu)
-        Me.MaximumSize = New System.Drawing.Size(950, 600)
+        Me.MaximumSize = New System.Drawing.Size(1178, 690)
         Me.Name = "main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -278,6 +297,7 @@ Partial Class main
         Me.Panel_Sale.ResumeLayout(False)
         Me.Panellogo.ResumeLayout(False)
         Me.Panellogo.PerformLayout()
+        Me.Panel_ChidForm.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -286,15 +306,17 @@ Partial Class main
     Friend WithEvents Btn_sale As Button
     Friend WithEvents Panellogo As Panel
     Friend WithEvents Panel_Detail As Panel
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Btn_typeproduct As Button
+    Friend WithEvents Btn_Product As Button
+    Friend WithEvents Btn_detail As Button
+    Friend WithEvents Btn_import As Button
     Friend WithEvents Panel_Sale As Panel
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Btn_report As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents Btn_Representative As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel_ChidForm As Panel
+    Friend WithEvents Panel_ChidForm As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class

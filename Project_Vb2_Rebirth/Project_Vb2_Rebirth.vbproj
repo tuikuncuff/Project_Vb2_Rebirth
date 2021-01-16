@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,10 +76,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Form_import.Designer.vb">
+      <DependentUpon>Form_import.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Form_import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_miniSale.Designer.vb">
+      <DependentUpon>Form_miniSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_miniSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Product.Designer.vb">
+      <DependentUpon>Form_Product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Representative.Designer.vb">
+      <DependentUpon>Form_Representative.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Representative.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_typeProduct.Designer.vb">
+      <DependentUpon>Form_typeProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_typeProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_wholesale.Designer.vb">
+      <DependentUpon>Form_wholesale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_wholesale.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main.Designer.vb">
@@ -110,8 +143,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Form_import.resx">
+      <DependentUpon>Form_import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_miniSale.resx">
+      <DependentUpon>Form_miniSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Product.resx">
+      <DependentUpon>Form_Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Representative.resx">
+      <DependentUpon>Form_Representative.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_typeProduct.resx">
+      <DependentUpon>Form_typeProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_wholesale.resx">
+      <DependentUpon>Form_wholesale.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.vb</DependentUpon>
@@ -139,6 +187,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\a631c043-1b82-4b4e-a88b-99a7ad843eff.jpg" />
   </ItemGroup>
   <ItemGroup>
