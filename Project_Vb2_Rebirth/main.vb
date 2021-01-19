@@ -91,4 +91,8 @@ Public Class main
 
         hideSubmenu()
     End Sub
+
+    Private Sub Btn_report_Click(sender As Object, e As EventArgs) Handles Btn_report.Click
+        openChidForm(New Form_report())
+    End Sub
 End Class

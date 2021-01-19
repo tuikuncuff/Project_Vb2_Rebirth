@@ -37,9 +37,16 @@ Partial Class Form_typeProduct
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2GradientButton3 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel2.SuspendLayout()
         Me.Guna2ShadowPanel1.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2DataGridView1
@@ -161,6 +168,9 @@ Partial Class Form_typeProduct
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Guna2Panel2.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2Panel2.Controls.Add(Me.Label3)
+        Me.Guna2Panel2.Controls.Add(Me.Label1)
         Me.Guna2Panel2.Location = New System.Drawing.Point(727, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
@@ -248,39 +258,84 @@ Partial Class Form_typeProduct
         Me.Guna2Button10.TabIndex = 36
         Me.Guna2Button10.Text = "ແກ້ໄຂ"
         '
-        'Guna2GradientButton3
+        'Guna2PictureBox1
         '
-        Me.Guna2GradientButton3.Animated = True
-        Me.Guna2GradientButton3.AutoRoundedCorners = True
-        Me.Guna2GradientButton3.BorderRadius = 21
-        Me.Guna2GradientButton3.CheckedState.Parent = Me.Guna2GradientButton3
-        Me.Guna2GradientButton3.CustomImages.Parent = Me.Guna2GradientButton3
-        Me.Guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2GradientButton3.FillColor2 = System.Drawing.Color.DarkGray
-        Me.Guna2GradientButton3.Font = New System.Drawing.Font("Phetsarath OT", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GradientButton3.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientButton3.HoverState.Parent = Me.Guna2GradientButton3
-        Me.Guna2GradientButton3.Location = New System.Drawing.Point(-18, 12)
-        Me.Guna2GradientButton3.Name = "Guna2GradientButton3"
-        Me.Guna2GradientButton3.ShadowDecoration.Parent = Me.Guna2GradientButton3
-        Me.Guna2GradientButton3.Size = New System.Drawing.Size(120, 45)
-        Me.Guna2GradientButton3.TabIndex = 47
-        Me.Guna2GradientButton3.Text = "ກັບໜ້າຫຼັກ"
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.Image = Global.Project_Vb2_Rebirth.My.Resources.Resources.home_25px
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 21)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(35, 36)
+        Me.Guna2PictureBox1.TabIndex = 47
+        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2PictureBox1.UseTransparentBackground = True
+        '
+        'Guna2GradientButton1
+        '
+        Me.Guna2GradientButton1.Animated = True
+        Me.Guna2GradientButton1.AutoRoundedCorners = True
+        Me.Guna2GradientButton1.BorderRadius = 23
+        Me.Guna2GradientButton1.CheckedState.Parent = Me.Guna2GradientButton1
+        Me.Guna2GradientButton1.CustomImages.Parent = Me.Guna2GradientButton1
+        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.DarkGray
+        Me.Guna2GradientButton1.Font = New System.Drawing.Font("Phetsarath OT", 10.2!)
+        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton1.HoverState.Parent = Me.Guna2GradientButton1
+        Me.Guna2GradientButton1.Location = New System.Drawing.Point(-18, 12)
+        Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
+        Me.Guna2GradientButton1.ShadowDecoration.Parent = Me.Guna2GradientButton1
+        Me.Guna2GradientButton1.Size = New System.Drawing.Size(88, 48)
+        Me.Guna2GradientButton1.TabIndex = 46
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.Project_Vb2_Rebirth.My.Resources.Resources.user_35px
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(17, 12)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(39, 36)
+        Me.Guna2PictureBox2.TabIndex = 50
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(71, 31)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 20)
+        Me.Label3.TabIndex = 49
+        Me.Label3.Text = "Name"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(71, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.TabIndex = 48
+        Me.Label1.Text = "ID"
         '
         'Form_typeProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 650)
-        Me.Controls.Add(Me.Guna2GradientButton3)
+        Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2ShadowPanel1)
+        Me.Controls.Add(Me.Guna2GradientButton1)
         Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Name = "Form_typeProduct"
         Me.Text = "Form_typeProduct"
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.Guna2ShadowPanel1.ResumeLayout(False)
         Me.Guna2ShadowPanel1.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -296,5 +351,9 @@ Partial Class Form_typeProduct
     Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2GradientButton3 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
 End Class

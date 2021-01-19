@@ -94,6 +94,12 @@
     <Compile Include="Form_Product.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_report.Designer.vb">
+      <DependentUpon>Form_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Representative.Designer.vb">
       <DependentUpon>Form_Representative.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Product.resx">
       <DependentUpon>Form_Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_report.resx">
+      <DependentUpon>Form_report.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Representative.resx">
       <DependentUpon>Form_Representative.vb</DependentUpon>
@@ -216,6 +225,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lock_21px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_22px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

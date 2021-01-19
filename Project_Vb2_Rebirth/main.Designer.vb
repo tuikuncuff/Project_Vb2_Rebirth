@@ -24,6 +24,8 @@ Partial Class main
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.PanelSidemenu = New System.Windows.Forms.Panel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Btn_report = New System.Windows.Forms.Button()
         Me.Panel_Detail = New System.Windows.Forms.Panel()
         Me.Btn_Representative = New System.Windows.Forms.Button()
@@ -39,18 +41,26 @@ Partial Class main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_ChidForm = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.PanelSidemenu.SuspendLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_Detail.SuspendLayout()
         Me.Panel_Sale.SuspendLayout()
         Me.Panellogo.SuspendLayout()
         Me.Panel_ChidForm.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSidemenu
         '
         Me.PanelSidemenu.AutoScroll = True
         Me.PanelSidemenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.PanelSidemenu.Controls.Add(Me.Guna2PictureBox1)
+        Me.PanelSidemenu.Controls.Add(Me.Guna2Button1)
         Me.PanelSidemenu.Controls.Add(Me.Btn_report)
         Me.PanelSidemenu.Controls.Add(Me.Panel_Detail)
         Me.PanelSidemenu.Controls.Add(Me.Btn_detail)
@@ -64,6 +74,35 @@ Partial Class main
         Me.PanelSidemenu.Name = "PanelSidemenu"
         Me.PanelSidemenu.Size = New System.Drawing.Size(250, 643)
         Me.PanelSidemenu.TabIndex = 0
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox1.Image = Global.Project_Vb2_Rebirth.My.Resources.Resources.exit_22px
+        Me.Guna2PictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(12, 610)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(31, 30)
+        Me.Guna2PictureBox1.TabIndex = 10
+        Me.Guna2PictureBox1.TabStop = False
+        Me.Guna2PictureBox1.UseTransparentBackground = True
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Animated = True
+        Me.Guna2Button1.BorderRadius = 15
+        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
+        Me.Guna2Button1.FillColor = System.Drawing.Color.Red
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Location = New System.Drawing.Point(-16, 602)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Size = New System.Drawing.Size(78, 41)
+        Me.Guna2Button1.TabIndex = 9
         '
         'Btn_report
         '
@@ -270,11 +309,43 @@ Partial Class main
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Label3)
+        Me.Guna2Panel1.Controls.Add(Me.Label2)
         Me.Guna2Panel1.Location = New System.Drawing.Point(727, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(200, 60)
         Me.Guna2Panel1.TabIndex = 8
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.Project_Vb2_Rebirth.My.Resources.Resources.user_35px
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(16, 12)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(39, 36)
+        Me.Guna2PictureBox2.TabIndex = 3
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Phetsarath OT", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(70, 31)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(70, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(21, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "ID"
         '
         'Guna2Elipse1
         '
@@ -293,11 +364,15 @@ Partial Class main
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.PanelSidemenu.ResumeLayout(False)
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Detail.ResumeLayout(False)
         Me.Panel_Sale.ResumeLayout(False)
         Me.Panellogo.ResumeLayout(False)
         Me.Panellogo.PerformLayout()
         Me.Panel_ChidForm.ResumeLayout(False)
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -319,4 +394,9 @@ Partial Class main
     Friend WithEvents Panel_ChidForm As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
