@@ -82,6 +82,12 @@
     <Compile Include="Form_import.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_main2.Designer.vb">
+      <DependentUpon>Form_main2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_main2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_miniSale.Designer.vb">
       <DependentUpon>Form_miniSale.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form_import.resx">
       <DependentUpon>Form_import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_main2.resx">
+      <DependentUpon>Form_main2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_miniSale.resx">
       <DependentUpon>Form_miniSale.vb</DependentUpon>
@@ -246,6 +255,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit_22px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell_stock_22px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_21px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_22px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_22px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -3,6 +3,7 @@
 Public Class main
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
+        Timer1.Enabled = True
     End Sub
 
     Private Sub hideSubmenu()
@@ -25,20 +26,6 @@ Public Class main
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Btn_detail.Click
         showSubmenu(Panel_Detail)
     End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'switchPanel(Form_miniSale)
-        openChidForm(New Form_miniSale())
-
-        hideSubmenu()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        openChidForm(New Form_wholesale())
-
-        hideSubmenu()
-    End Sub
-
 
     'Sub switchPanel(panel As Form)
     '    Panel_ChidForm.Controls.Clear()
@@ -95,4 +82,24 @@ Public Class main
     Private Sub Btn_report_Click(sender As Object, e As EventArgs) Handles Btn_report.Click
         openChidForm(New Form_report())
     End Sub
+
+    Private Sub Btn_miniSale_Click(sender As Object, e As EventArgs) Handles Btn_miniSale.Click
+        openChidForm(New Form_miniSale())
+
+        hideSubmenu()
+    End Sub
+
+    Private Sub Btn_wholeSale_Click(sender As Object, e As EventArgs) Handles Btn_wholeSale.Click
+        openChidForm(New Form_wholesale())
+
+        hideSubmenu()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label_Date.Text = Date.Now.ToString("dd MM yyy")
+        Label_Time.Text = Date.Now.ToString("hh:mm:ss")
+
+    End Sub
+
+
 End Class
